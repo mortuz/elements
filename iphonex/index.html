@@ -76,7 +76,9 @@
                 var months = ["January", "February", "March", "April", "May", "June",
                     "July", "August", "September", "October", "November", "December"
                 ];
-                var time = d.getHours() + ':' + d.getMinutes();
+                var hours = (d.getHours() < 10 ? '0' : '') + d.getHours();
+                var minutes = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+                var time = hours + ':' + minutes;
                 var date = days[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()];
                 document.getElementById('time').innerHTML = time;
                 document.getElementById('date').innerHTML = date;
