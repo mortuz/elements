@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heart"></div>
+    <h1 class="click">Click me</h1>
+
+    <script>
+        var heart = document.querySelector('.heart');
+        var click = document.querySelector('.click');
+        click.addEventListener('click', function() {
+            
+            setTimeout(function() {
+                click.style.opacity = 0;
+            }, 200)
+            heart.classList.add('form');
+        });
+        heart.addEventListener('click', function() {
+            heart.classList.remove('form');
+            
+            setTimeout(function() {
+                click.style.opacity = 1;
+            }, 1500)
+        });
+    </script>
+</body>
+</html>
