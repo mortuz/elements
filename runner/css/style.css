@@ -14,10 +14,11 @@ body {
     width: 266.666px;
     height: 200px;
     background: url('./../img/runner.png') no-repeat 100% 0 transparent;
+    transform: translateX(-100%);
 }
 .track {
-    margin-top: -50px;
+    margin-top: -32px;
     width: 100%;
-    height: 20px;
+    height: 10px;
     background: orangered;
 }

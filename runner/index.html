@@ -18,28 +18,30 @@
     <script>
         $runner = $('.runner');
         var steps = 24;
-        var currentStep = 24;
+        var currentStep = 23;
         var delay = 50;
         var trackLength = 0;
 
         var nextStep = function() {
-            $runner.css('backgroundPosition', '-'  + (6400/24 * currentStep) + 'px 0px');
-            $runner.css('marginLeft', '' + trackLength + 'px');
+            setTimeout(function() {
+                $runner.css('backgroundPosition', '-' + (6400 / 24 * currentStep) + 'px 0px');
+                $runner.css('marginLeft', '' + trackLength + 'px');
 
-            currentStep--;
-            trackLength += 15;
+                currentStep--;
+                trackLength += 12;
 
-            if (currentStep <= 0) {
-                currentStep = 24;
-            }
+                if (currentStep <= 0) {
+                    currentStep = 23;
+                }
 
-            if (trackLength >= $(window).width() + 267) {
-                trackLength = 0;
-            }
+                if (trackLength >= $(window).width() + 267) {
+                    trackLength = 0;
+                }
 
-            window.setTimeout(nextStep, delay);
+                requestAnimationFrame(nextStep);
+            }, delay);
+            
         }
-
         nextStep();
     </script>
 </body>
