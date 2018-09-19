@@ -11,15 +11,18 @@
     <div class="wrapper">
         <div class="runner"></div>
         <div class="track"></div>
-        <button id="faster">Faster</button>
+        
+    </div>
+    <div class="btn-container">
         <button id="slower">Slower</button>
+        <button id="faster">Faster</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $runner = $('.runner');
         var steps = 24;
         var currentStep = 23;
-        var delay = 50;
+        var delay = 40;
         var trackLength = 0;
 
         var nextStep = function() {
@@ -43,6 +46,16 @@
             
         }
         nextStep();
+
+        $('#faster').on('click', function() {
+            delay -= 5;
+            if (delay <=0) {
+                delay = 5;
+            }
+        });
+        $('#slower').on('click', function () {
+                delay += 5;
+            });
     </script>
 </body>
 </html>
