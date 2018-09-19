@@ -8,9 +8,9 @@ body{
 .click {
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 50%;
     color: #ffffff;
-    transform: translate(24px, 8px);
+    transform: translate(-50%, 0px);
     margin: 1.2rem 0rem;
 }
 .heart {
@@ -18,14 +18,15 @@ body{
     height: 100px;
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 50%;
     background: #e53935;
     transition: all 1s ease;
     transform-origin: right bottom;
+    transform: translateX(-50%);
 }
 
 .heart.form {
-    transform: rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }

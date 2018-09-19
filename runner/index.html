@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runner</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="runner"></div>
+        <div class="track"></div>
+        <button id="faster">Faster</button>
+        <button id="slower">Slower</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $runner = $('.runner');
+        var steps = 24;
+        var currentStep = 24;
+        var delay = 50;
+        var trackLength = 0;
+
+        var nextStep = function() {
+            $runner.css('backgroundPosition', '-'  + (6400/24 * currentStep) + 'px 0px');
+            $runner.css('marginLeft', '' + trackLength + 'px');
+
+            currentStep--;
+            trackLength += 15;
+
+            if (currentStep <= 0) {
+                currentStep = 24;
+            }
+
+            if (trackLength >= $(window).width() + 267) {
+                trackLength = 0;
+            }
+
+            window.setTimeout(nextStep, delay);
+        }
+
+        nextStep();
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+.wrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.runner {
+    width: 266.666px;
+    height: 200px;
+    background: url('./../img/runner.png') no-repeat 100% 0 transparent;
+}
+.track {
+    margin-top: -50px;
+    width: 100%;
+    height: 20px;
+    background: orangered;
+}
