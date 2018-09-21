@@ -45,7 +45,7 @@ body{
     width: 170px;
     border-radius: 50%;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 10px;
 }
 .eyebrow {
@@ -53,7 +53,7 @@ body{
     width: 34px;
     background: #002438;
     position: absolute;
-    top: 70px;
+    top: 80px;
     border-radius: 50px;
 }
 .eyebrow.left {
@@ -69,7 +69,7 @@ body{
     border-radius: 50px;
     background: var(--dark-blue);
     position: absolute;
-    top: 90px;
+    top: 100px;
 }
 .eye.left {
     left: 66px;
@@ -86,12 +86,12 @@ body{
     background-color: #fff;
     left: 50%;
     transform: translateX(-50%);
-    top: 125px;
+    top: 135px;
 }
 .ear {
     position: absolute;
     border-radius: 50px;
-    top: 124px;
+    top: 134px;
     height: 25px;
     width: 25px;
     background: var(--dark-skin-color);
