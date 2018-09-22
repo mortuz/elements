@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#bg {
+    height: 700px;
+    width: 1250px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#info {
+    font-family: fantasy;
+    font-size: 15em;
+    letter-spacing: 15px;
+    margin: 15px 0px;
+    fill: black;
+}
+/* #masked {
+    mask: url('#maskLayer');
+} */
