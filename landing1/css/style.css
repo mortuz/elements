@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500");
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5040b2), to(#7a69e6));
+  background-image: linear-gradient(to right, #5040b2 0%, #7a69e6 100%);
+  padding: 150px 0% 7vw 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 708px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#hero .wave-start {
+  position: absolute;
+  width: 100%;
+  top: calc(100% - 1px);
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#hero svg {
+  position: absolute;
+  left: -4px;
+  width: calc(100% + 8px);
+  top: 0;
+}
+
+#hero .wave-1 {
+  opacity: 1;
+}
+
+#hero .wave-2, #hero .wave-3, #hero .wave-4, #hero .wave-5, #hero .wave-6 {
+  opacity: 0.3;
+}
+
+#hero .btn-cta {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  padding: 17px 33px;
+  border-radius: 5px;
+  background-color: #06b4fe;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
